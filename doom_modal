@@ -1,0 +1,18 @@
+<j:jelly xmlns:j="jelly:core" xmlns:g="glide">
+  <div style="padding:0; margin:0; background:#000; text-align:center;">
+    <iframe id="doom_iframe"
+            src="https://js-dos.com/DOOM/"
+            allow="fullscreen; gamepad; pointer-lock"
+            allowfullscreen="true"
+            sandbox="allow-scripts allow-same-origin allow-pointer-lock"
+            style="width:100%; height:85vh; border:0; background:#000;">
+    </iframe>
+
+    <div style="padding:10px; text-align:center;">
+      <button class="btn btn-primary"
+              onclick="document.getElementById('doom_iframe').requestFullscreen()">
+        Fullscreen
+      </button>
+    </div>
+  </div>
+</j:jelly>
